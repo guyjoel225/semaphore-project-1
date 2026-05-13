@@ -1,7 +1,6 @@
 ---
 - name: Mon playbook
   hosts: my_servers
-  become: true
   tasks:
     - name: print os info
       ansible.builtin.package:
