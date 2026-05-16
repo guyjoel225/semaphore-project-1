@@ -1,0 +1,16 @@
+---
+- name: test de converion d une vm depuis une source distantes
+  hosts: myhosts
+
+  tasks:
+
+   - name:
+
+     ansible.builtin.shell: |
+      echo "configuration du fichier d'autantification"
+      source /home/devops/admin-openrc.sh 
+      virt-v2v -i vmx \
+      -it ssh "ssh://joel@192.168.222.1/home/joel/vmware/Docker-marchine/Docker-marchine.vmx" /
+      -o local -of qcow2 -os /var/tmp/v1
+      
+      
