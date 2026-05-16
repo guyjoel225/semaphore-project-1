@@ -1,6 +1,6 @@
 ---
 - name: test de conversion d une vm
-  hosts: controlers
+  hosts:  controler
 
   tasks:
 
