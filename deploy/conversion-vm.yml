@@ -9,7 +9,7 @@
         echo "configuration du fichier d'authentification"
 
         source /home/devops/admin-openrc.sh
-
+        export LIBGUESTFS_BACKEND=direct
         /usr/bin/virt-v2v \
           -i vmx \
           -it ssh \
