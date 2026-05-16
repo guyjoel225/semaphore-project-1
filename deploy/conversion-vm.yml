@@ -4,7 +4,7 @@
 
   tasks:
 
-   - name:
+   - name: conversion de la vm docker
 
      ansible.builtin.shell: |
       echo "configuration du fichier d'autantification"
