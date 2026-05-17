@@ -21,4 +21,4 @@
 
       args:
         executable: /bin/bash
-      verbosity: 4
+      ansible_verbosity=3
