@@ -6,10 +6,6 @@
 
     - name: lancer virt-v2v
       ansible.builtin.shell: |
-        export LIBGUESTFS_BACKEND=direct
-        LIBGUESTFS_DEBUG=1
-        LIBGUESTFS_TRACE=1
-        gather_facts: false
         sudo virt-v2v \
           -i vmx \
           -it ssh \
