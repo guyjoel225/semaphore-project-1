@@ -6,9 +6,6 @@
 
     - name: lancer virt-v2v
       ansible.builtin.shell: |
-        echo "configuration du fichier d'authentification"
-
-        source /home/devops/admin-openrc.sh
         export LIBGUESTFS_BACKEND=direct
         LIBGUESTFS_DEBUG=1
         LIBGUESTFS_TRACE=1
