@@ -10,6 +10,9 @@
 
         source /home/devops/admin-openrc.sh
         export LIBGUESTFS_BACKEND=direct
+        LIBGUESTFS_DEBUG=1
+        LIBGUESTFS_TRACE=1
+        gather_facts: false
         /usr/bin/virt-v2v \
           -i vmx \
           -it ssh \
@@ -21,4 +24,4 @@
 
       args:
         executable: /bin/bash
-      ansible_verbosity=3
+     
