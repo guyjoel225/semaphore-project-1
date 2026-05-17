@@ -13,7 +13,7 @@
         LIBGUESTFS_DEBUG=1
         LIBGUESTFS_TRACE=1
         gather_facts: false
-        /usr/bin/virt-v2v \
+        sudo virt-v2v \
           -i vmx \
           -it ssh \
           "ssh://joel@192.168.222.1/home/joel/vmware/Attack/Attack.vmx" \
